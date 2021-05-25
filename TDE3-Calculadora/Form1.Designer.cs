@@ -32,8 +32,8 @@ namespace TDE3_Calculadora
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.btnMontante = new System.Windows.Forms.Button();
             this.btnCapital = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnTempo = new System.Windows.Forms.Button();
+            this.btnTaxa = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -71,38 +71,47 @@ namespace TDE3_Calculadora
             this.btnCapital.TabIndex = 1;
             this.btnCapital.Text = "Calcular Capital";
             this.btnCapital.UseVisualStyleBackColor = false;
+            this.btnCapital.Click += new System.EventHandler(this.btnCapital_Click);
+            this.btnCapital.MouseEnter += new System.EventHandler(this.btnCapital_MouseEnter);
+            this.btnCapital.MouseLeave += new System.EventHandler(this.btnCapital_MouseLeave);
             // 
-            // button1
+            // btnTempo
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(386, 270);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(171, 64);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Calcular Tempo";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnTempo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTempo.BackColor = System.Drawing.Color.Transparent;
+            this.btnTempo.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnTempo.FlatAppearance.BorderSize = 3;
+            this.btnTempo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTempo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.btnTempo.ForeColor = System.Drawing.Color.White;
+            this.btnTempo.Location = new System.Drawing.Point(386, 270);
+            this.btnTempo.Name = "btnTempo";
+            this.btnTempo.Size = new System.Drawing.Size(171, 64);
+            this.btnTempo.TabIndex = 3;
+            this.btnTempo.Text = "Calcular Tempo";
+            this.btnTempo.UseVisualStyleBackColor = false;
+            this.btnTempo.Click += new System.EventHandler(this.btnTempo_Click);
+            this.btnTempo.MouseEnter += new System.EventHandler(this.btnTempo_MouseEnter);
+            this.btnTempo.MouseLeave += new System.EventHandler(this.btnTempo_MouseLeave);
             // 
-            // button2
+            // btnTaxa
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.BorderSize = 3;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(77, 270);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(171, 64);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Calcular Taxa de Juros";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnTaxa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnTaxa.BackColor = System.Drawing.Color.Transparent;
+            this.btnTaxa.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnTaxa.FlatAppearance.BorderSize = 3;
+            this.btnTaxa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaxa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.btnTaxa.ForeColor = System.Drawing.Color.White;
+            this.btnTaxa.Location = new System.Drawing.Point(77, 270);
+            this.btnTaxa.Name = "btnTaxa";
+            this.btnTaxa.Size = new System.Drawing.Size(171, 64);
+            this.btnTaxa.TabIndex = 2;
+            this.btnTaxa.Text = "Calcular Taxa de Juros";
+            this.btnTaxa.UseVisualStyleBackColor = false;
+            this.btnTaxa.Click += new System.EventHandler(this.btnTaxa_Click);
+            this.btnTaxa.MouseEnter += new System.EventHandler(this.btnTaxa_MouseEnter);
+            this.btnTaxa.MouseLeave += new System.EventHandler(this.btnTaxa_MouseLeave);
             // 
             // label1
             // 
@@ -141,8 +150,8 @@ namespace TDE3_Calculadora
             this.ClientSize = new System.Drawing.Size(644, 374);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnTempo);
+            this.Controls.Add(this.btnTaxa);
             this.Controls.Add(this.btnCapital);
             this.Controls.Add(this.btnMontante);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
@@ -157,8 +166,8 @@ namespace TDE3_Calculadora
 
         private System.Windows.Forms.Button btnMontante;
         private System.Windows.Forms.Button btnCapital;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnTempo;
+        private System.Windows.Forms.Button btnTaxa;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }
