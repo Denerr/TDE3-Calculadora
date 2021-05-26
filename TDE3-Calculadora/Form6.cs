@@ -26,7 +26,8 @@ namespace TDE3_Calculadora
 
         private void btnMontante_Click(object sender, EventArgs e)
         {
-
+            Form7 form7 = new Form7();
+            form7.ShowDialog();
         }
 
         private void btnMontante_MouseEnter(object sender, EventArgs e)

@@ -29,6 +29,7 @@ namespace TDE3_Calculadora
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
             this.lblMenu = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnPeriodo = new System.Windows.Forms.Button();
@@ -137,6 +138,8 @@ namespace TDE3_Calculadora
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(589, 388);
             this.Controls.Add(this.lblMenu);
             this.Controls.Add(this.label1);
@@ -144,6 +147,7 @@ namespace TDE3_Calculadora
             this.Controls.Add(this.btnTaxa);
             this.Controls.Add(this.btnNominal);
             this.Controls.Add(this.btnDesconto);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Form6";
             this.Text = "Calculadora de Descontos";
             this.ResumeLayout(false);
