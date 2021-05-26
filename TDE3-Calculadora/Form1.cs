@@ -101,5 +101,12 @@ namespace TDE3_Calculadora
             btnTempo.BackColor = Color.Transparent;
             btnTempo.FlatAppearance.BorderColor = Color.White;
         }
+
+        private void lblMenu_Click(object sender, EventArgs e)
+        {
+            Form6 desconto = new Form6();
+            desconto.ShowDialog();
+            this.Close();
+        }
     }
 }

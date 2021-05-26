@@ -35,7 +35,7 @@ namespace TDE3_Calculadora
             this.btnTempo = new System.Windows.Forms.Button();
             this.btnTaxa = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblMenu = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnMontante
@@ -127,19 +127,20 @@ namespace TDE3_Calculadora
             this.label1.TabIndex = 4;
             this.label1.Text = "Calculadora de Juros Compostos";
             // 
-            // label2
+            // lblMenu
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(237, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(170, 18);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Escolha a Operação";
+            this.lblMenu.AutoSize = true;
+            this.lblMenu.BackColor = System.Drawing.Color.Transparent;
+            this.lblMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.lblMenu.ForeColor = System.Drawing.Color.White;
+            this.lblMenu.Location = new System.Drawing.Point(237, 90);
+            this.lblMenu.Name = "lblMenu";
+            this.lblMenu.Size = new System.Drawing.Size(170, 18);
+            this.lblMenu.TabIndex = 5;
+            this.lblMenu.Text = "Escolha a Operação";
+            this.lblMenu.Click += new System.EventHandler(this.lblMenu_Click);
             // 
             // frmMenu
             // 
@@ -148,7 +149,7 @@ namespace TDE3_Calculadora
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(644, 374);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblMenu);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnTempo);
             this.Controls.Add(this.btnTaxa);
@@ -169,7 +170,7 @@ namespace TDE3_Calculadora
         private System.Windows.Forms.Button btnTempo;
         private System.Windows.Forms.Button btnTaxa;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblMenu;
     }
 }
 
