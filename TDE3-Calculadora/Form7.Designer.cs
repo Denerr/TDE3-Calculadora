@@ -177,8 +177,9 @@ namespace TDE3_Calculadora
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnCalcular);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Form7";
-            this.Text = "Form7";
+            this.Text = "Calculo de Desconto";
             this.ResumeLayout(false);
             this.PerformLayout();
 
