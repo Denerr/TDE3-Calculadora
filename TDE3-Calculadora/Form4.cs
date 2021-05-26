@@ -17,6 +17,8 @@ namespace TDE3_Calculadora
             InitializeComponent();
         }
 
+        double resultado;
+
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -24,7 +26,21 @@ namespace TDE3_Calculadora
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
+            //i = ((M / C) ^ (1 / T)) - 1 || Formula a ser usada
 
+            double montante, capital, tempo, aux1, aux2, poten;
+
+            montante = Double.Parse(txtMontante.Text);
+            capital = Double.Parse(txtCapital.Text);
+            tempo = Double.Parse(txtCapital.Text);
+
+            aux1 = montante / capital;
+            aux2 = 1 / tempo;
+            poten = Math.Pow(aux1, aux2);
+
+            resultado = poten - 1;
+
+            txtResultado.Text = resultado.ToString();
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
@@ -81,7 +97,9 @@ namespace TDE3_Calculadora
 
         private void btnPorcento_Click(object sender, EventArgs e)
         {
-            
+            resultado = resultado * 100;
+
+            txtResultado.Text = resultado.ToString("0.00000") + "%";
         }
 
         private void btnPorcento_MouseEnter(object sender, EventArgs e)
