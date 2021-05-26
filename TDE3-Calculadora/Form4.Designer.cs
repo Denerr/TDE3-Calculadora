@@ -215,7 +215,7 @@ namespace TDE3_Calculadora
             this.Controls.Add(this.btnVoltar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "Calculo de Taxa";
             this.ResumeLayout(false);
             this.PerformLayout();
 
