@@ -38,7 +38,19 @@ namespace TDE3_Calculadora
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
+            double montante, taxa, tempo, resultado, aux, poten;
 
+            montante = Double.Parse(txtMontante.Text);
+            taxa = Double.Parse(txtTaxa.Text);
+            tempo = Double.Parse(txtTempo.Text);
+
+            taxa = taxa / 100;
+            aux = (1 + taxa);
+            poten = Math.Pow(aux,tempo);
+
+            resultado = montante / poten;
+
+            txtResultado.Text = resultado.ToString();
         }
 
         private void btnCalcular_MouseEnter(object sender, EventArgs e)
