@@ -82,6 +82,9 @@ namespace TDE3_Calculadora
             this.btnPeriodo.TabIndex = 9;
             this.btnPeriodo.Text = "Calcular Periodo  de Antecipação";
             this.btnPeriodo.UseVisualStyleBackColor = false;
+            this.btnPeriodo.Click += new System.EventHandler(this.btnPeriodo_Click);
+            this.btnPeriodo.MouseEnter += new System.EventHandler(this.btnPeriodo_MouseEnter);
+            this.btnPeriodo.MouseLeave += new System.EventHandler(this.btnPeriodo_MouseLeave);
             // 
             // btnTaxa
             // 
@@ -98,6 +101,9 @@ namespace TDE3_Calculadora
             this.btnTaxa.TabIndex = 8;
             this.btnTaxa.Text = "Calcular Taxa de Juros";
             this.btnTaxa.UseVisualStyleBackColor = false;
+            this.btnTaxa.Click += new System.EventHandler(this.btnTaxa_Click);
+            this.btnTaxa.MouseEnter += new System.EventHandler(this.btnTaxa_MouseEnter);
+            this.btnTaxa.MouseLeave += new System.EventHandler(this.btnTaxa_MouseLeave);
             // 
             // btnNominal
             // 
@@ -114,6 +120,9 @@ namespace TDE3_Calculadora
             this.btnNominal.TabIndex = 7;
             this.btnNominal.Text = "Calcular Valor Nominal";
             this.btnNominal.UseVisualStyleBackColor = false;
+            this.btnNominal.Click += new System.EventHandler(this.btnNominal_Click);
+            this.btnNominal.MouseEnter += new System.EventHandler(this.btnNominal_MouseEnter);
+            this.btnNominal.MouseLeave += new System.EventHandler(this.btnNominal_MouseLeave);
             // 
             // btnDesconto
             // 

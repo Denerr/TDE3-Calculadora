@@ -29,6 +29,7 @@ namespace TDE3_Calculadora
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtPeriodo = new System.Windows.Forms.TextBox();
@@ -44,7 +45,7 @@ namespace TDE3_Calculadora
             // txtResultado
             // 
             this.txtResultado.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
-            this.txtResultado.Location = new System.Drawing.Point(333, 159);
+            this.txtResultado.Location = new System.Drawing.Point(335, 186);
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.ReadOnly = true;
             this.txtResultado.Size = new System.Drawing.Size(182, 26);
@@ -56,7 +57,7 @@ namespace TDE3_Calculadora
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(371, 125);
+            this.label4.Location = new System.Drawing.Point(373, 152);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 22);
             this.label4.TabIndex = 19;
@@ -130,12 +131,15 @@ namespace TDE3_Calculadora
             this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
             this.btnLimpar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpar.Location = new System.Drawing.Point(439, 301);
+            this.btnLimpar.Location = new System.Drawing.Point(441, 328);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(93, 36);
             this.btnLimpar.TabIndex = 12;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            this.btnLimpar.MouseEnter += new System.EventHandler(this.btnLimpar_MouseEnter);
+            this.btnLimpar.MouseLeave += new System.EventHandler(this.btnLimpar_MouseLeave);
             // 
             // btnCalcular
             // 
@@ -145,7 +149,7 @@ namespace TDE3_Calculadora
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalcular.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
             this.btnCalcular.ForeColor = System.Drawing.Color.White;
-            this.btnCalcular.Location = new System.Drawing.Point(323, 301);
+            this.btnCalcular.Location = new System.Drawing.Point(325, 328);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(93, 36);
             this.btnCalcular.TabIndex = 11;
@@ -160,6 +164,8 @@ namespace TDE3_Calculadora
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(561, 385);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.label4);
