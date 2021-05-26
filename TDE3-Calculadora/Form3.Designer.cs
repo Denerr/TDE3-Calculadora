@@ -194,6 +194,7 @@ namespace TDE3_Calculadora
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.btnVoltar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Form3";
             this.Text = "Form3";
             this.ResumeLayout(false);
