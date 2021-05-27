@@ -106,7 +106,6 @@ namespace TDE3_Calculadora
         {
             Form6 desconto = new Form6();
             desconto.ShowDialog();
-            this.Close();
         }
     }
 }
