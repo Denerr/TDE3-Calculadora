@@ -175,8 +175,9 @@ namespace TDE3_Calculadora
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnCalcular);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Form10";
-            this.Text = "Form10";
+            this.Text = "Calculo de Periodo";
             this.ResumeLayout(false);
             this.PerformLayout();
 
